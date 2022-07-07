@@ -1,7 +1,6 @@
 package com.example.saucelogs.sauce;
 
 import org.springframework.data.annotation.Id;
-import org.hibernate.validator.constraints.URL;
 
 import javax.validation.constraints.*;
 
