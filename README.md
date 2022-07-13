@@ -11,6 +11,37 @@ IntelliJ or VS Code
 Git
 A Valid Sauce Labs account
 
+### Gitpod setup
+
+ℹ Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't have time or you don't know how to setup a local Java environment.
+
+1. Sign up for a free [GitHub account](https://github.com/)
+2. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+ * Make sure you are logged into GitHub
+ * Click the Fork in the upper right of the GitHub.
+ * Give the repo a ⭐ while you're here 🤩
+3. In the browser address bar, your GitHub url (`https://github.com/USERNAME/this-repo-name`) with `https://gitpod.io/#`
+    * The resulting url should look as follows:
+   
+      > https://gitpod.io/#https://github.com/USERNAME/mobile-appium-java-workshop
+   
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
+5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`:
+
+```bash
+eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
+eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
+```
+
+> Replace <sauce_username>, <sauce_access_key> with your credentials
+
+Once you have run those 2 commands, you can run the following commands to test your environment variables:
+
+```bash
+echo $SAUCE_USERNAME
+echo $SAUCE_ACCESS_KEY
+```
+
 ## Workshop Structure
 
 The structure of this workshop is as follows:
